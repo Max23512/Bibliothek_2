@@ -1,0 +1,25 @@
+public class Buch{
+    public String title;
+    public String auther;
+    public boolean isborrowed = false;
+
+    buch(string title, string auther){
+        this.auther = auther;
+        this.title = title;
+
+    }
+    public  boolean getborrowbook(){
+        return isborrowed;
+    }
+    public void borrowbook(){
+        isborrowed = true;
+    }
+
+    public void returnbook(){
+        isborrowed = false;
+    }
+    public String toString() {
+    return "Titel: " + title + ", Autor: " + author + ", Status: " + (isBorrowed ? "ausgeliehen" : "verfügbar");
+}
+    
+}
