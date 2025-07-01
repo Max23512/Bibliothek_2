@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 public class Library{
     arrayList<book> bib = new arrayList<book>();
+    Scanner scanner = new Scanner(System.in);
 
     library(){
 

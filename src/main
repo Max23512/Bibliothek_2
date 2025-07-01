@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args)
+    Scanner scanner = new Scanner(System.in);
+    int eingabeMenü;
+    String eingabeAusleihen;
+    String eingabeZurückgeben;
+    String eingabeTitle;
+    String eingabeAuther;
+
+    System.out.println("1-Buch hinzufügen");
+    System.out.println("2-Bücher anzeigen");
+    System.out.println("3-Bücher ausleihen");
+    System.out.println("4-Buch zurückgeben");
+    System.out.println("5-Programm beenden");
+
+    int eingabeMenü = scanner.nextInt();
+
+    System.out.println("Wähle eine option" + eingabeMenü);
+
+
+    switch(eingabeMenü){
+        case 1:
+            String eingabeTitle  = scanner.nextLine();
+            System.out.println("Wie ist der Title des Buches" + eingabeTitle);
+            String eingabeAuther  = scanner.nextLine();
+            System.out.println("Wie ist der Title des Buches" + eingabeAuther);
+            //buch eingabeTitle = new book(eingabeTitle, eingabeAuther);
+
+            break;  
+
+        case 2:
+            for(int i =0; i<bib.lengt(); i++){
+                System.out.println(bib.get(i).toString);
+            }
+            break;
+
+        case 3:
+            String eingabeAusleihen  = scanner.nextLine();
+            System.out.println("Welches Buch möchtest du ausleihen" + eingabeAusleihen);
+                for(int i=0; i<bib.lengt(); i++){
+                    if(eingabeAusleihen == bib.get(i).title){
+                        bib.get(i).returnbook;
+                    }
+                }
+            break;
+
+        case 4:
+            String eingabeZurückgeben = scanner.nextLine();
+            System.out.println("Welches Buch möchtest du zurückgeben" + eingabeZurückgeben);
+                for(int i=0; i<bib.lengt(); i++){
+                    if(eingabeZurückgeben == bib.get(i).tilte){
+                        bib.get(i).borrowbook;
+                    }
+                }   
+            break;
+
+        case 5:
+            System.out.println("Programm wird beendet");
+            break;
+
+            default:
+            System.out.println("Diese Nummer ist nicht zur Auswahl");
+        
+    }
+
+}
